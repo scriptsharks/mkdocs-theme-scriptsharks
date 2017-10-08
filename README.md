@@ -4,7 +4,10 @@
   [pypi-link]: https://pypi.python.org/pypi/mkdocs-windmill-dark
 
 # Windmill Dark theme for MkDocs
-Outstanding mkdocs theme with a focus on navigation and usability, from Grist Labs.
+
+A dark theme for MkDocs.
+
+![](https://i.imgur.com/Tp8mYWj.png)
 
 Highlights:
 - Convenient navigation for larger documentation projects.
