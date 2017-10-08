@@ -1,5 +1,19 @@
+/*
+ruby #CC342D
+
+dark-bg-light #282C34
+dark-bg-light-hover #2C323C
+
+dark-bg-dark #21252B
+dark-bg-dark-hover #2C313A
+
+dark-code-bg #31363F
+
+*/
+
 body {
-    background-color: #f8f8f8;
+    background-color: #282C34;
+    color: black;
 }
 
 /***********************************************************************
@@ -7,7 +21,7 @@ body {
  ***********************************************************************/
 
 .navbar {
-  background-color: #546e7a;
+  background-color: #21252B;
   box-shadow: 0 1.5px 3px rgba(0,0,0,.24), 0 3px 8px rgba(0,0,0,.05);
   border: none;
   border-radius: 0px;
@@ -35,14 +49,14 @@ body {
   overflow: visible;
   width: 0px;
   height: 50px;
-  color: #fff;
+  color: #CC342D;
   font-size: 18px;
   white-space: nowrap;
   text-decoration: none;
 }
 
 .wm-top-link, .wm-top-link:hover, .wm-top-link:active, .wm-top-link:visited, .wm-top-link:focus {
-  color: #fff;
+  color: #CC342D;
   text-decoration: none;
 }
 
@@ -70,10 +84,10 @@ body {
 }
 
 .wm-top-version {
-  border: 1px solid #ddd;
+  border: 1px solid #CC342D;
   border-radius: 3px;
   padding: 0px 5px;
-  color: #ddd;
+  color: #CC342D;
   font-size: 8pt;
 }
 
@@ -87,16 +101,11 @@ body {
   right: 0px;
   padding: inherit;
   width: 100%;
-  background-color: #546e7a;
+  background-color: #CC342D;
 }
 
 .wm-top-search {
   width: 20rem;
-}
-
-#wm-toc-button {
-  margin-right: 1rem;
-  margin-left: 0.5rem;
 }
 
 /***********************************************************************
@@ -110,8 +119,8 @@ body {
   height: 100%;
   width: 250px;
   z-index: 1;
-  background-color: #f2f2f2;
-  border-right: 1px solid #e0e0e0;
+  background-color: #21252B;
+  border-right: 1px none black;
   overflow: auto;
   margin-left: 0px;
   padding-left: 1rem;
@@ -147,7 +156,7 @@ body {
   margin-top: -15px;
   margin-bottom: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px none black;
 }
 
 .wm-toc-hidden > .wm-toc-pane {
@@ -219,7 +228,7 @@ body {
 }
 
 .wm-toctree a, .wm-toctree a:visited, .wm-toctree a:hover, .wm-toctree a:focus {
-  color: #546e7a;
+  color: #CC342D;
   text-decoration: none;
   outline: none;
 }
@@ -228,6 +237,10 @@ body {
   display: block;
   padding: 4px;
   cursor: pointer;
+}
+
+span.wm-toc-text {
+    color: #CC342D;
 }
 
 .wm-toc-lev1 > .wm-toc-text { padding-left: 14px; }
@@ -256,23 +269,23 @@ body {
 }
 
 .wm-toc-li.wm-current, .wm-toc-li.wm-current:hover {
-  background-color: #546e7a;
-  color: white;
+  background-color: #CC342D;
+  color: #21252B;
 }
 
 .wm-toc-li:hover {
-  background-color: #e0e0e0;
+  background-color: #2C313A;
 }
 
 .wm-toc-li.wm-current a {
-  color: white;
+  color: #21252B;
 }
 
 .wm-toc-li-nested.wm-page-toc {
   font-size: 1.2rem;
   line-height: 1.2rem;
   overflow: hidden;
-  border-left: 1px solid #546e7a;
+  border-left: 1px solid #CC342D;
 }
 
 .wm-page-toc-opener > .wm-toc-text::after {
@@ -300,14 +313,26 @@ body {
   border: none;
 }
 
+button, .btn, .btn-sm, .btn-xs, .btn-default, .btn-link, #hist-fwd, #hist-back, #wm-toc-button, #wm-search-go {
+    background-color: #21252B;
+    color: #CC342D;
+    border: 1px solid;
+}
+
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
   outline: none;
 }
 
-.btn-default:focus, .btn-default.focus {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+button:focus, .btn:focus, .btn-sm:focus, .btn-xs:focus, .btn-default:focus, .btn-link:focus, #hist-fwd:focus, #hist-back:focus, #wm-toc-button:focus, #wm-search-go:focus {
+  color: #CC342D;
+  background-color: #2C313A;
+  border-color: #CC342D;
+}
+
+button:hover, .btn:hover, .btn-sm:hover, .btn-xs:hover, .btn-default:hover, .btn-link:hover, #hist-fwd:hover, #hist-back:hover, #wm-toc-button:hover, #wm-search-go:hover {
+  color: #CC342D;
+  background-color: #2C313A;
+  border-color: #CC342D;
 }
 
 .btn-default.greybtn {
@@ -326,21 +351,17 @@ body {
   display: inline-block;
   padding: 4px;
   line-height: 1.428571429;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #21252B;
+  border: 1px none black;
   border-radius: 4px;
   margin: 20px auto 30px auto;
-}
-
-.wm-page-content a {
-  color: #2fa4e7;
 }
 
 .wm-article-nav {
   display: inline-block;
   max-width: 48%;
   white-space: nowrap;
-  color: #546e7a;
+  color: #CC342D;
   text-align: right;
 }
 
@@ -353,7 +374,7 @@ body {
 }
 
 .wm-article-nav > a, .wm-article-nav > a:visited, .wm-article-nav > a:hover, .wm-article-nav > a:focus {
-  color: #546e7a;
+  color: #CC342D;
   text-decoration: none;
   outline: none;
 }
@@ -427,7 +448,7 @@ body {
 }
 
 h1 {
-    color: #444;
+    color: #CC342D;
     font-weight: 400;
     font-size: 42px;
     margin-top: 0;
@@ -435,7 +456,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-    color: #444;
+    color: #CC342D;
     font-weight: 300;
 }
 
@@ -445,9 +466,9 @@ hr {
 
 pre, .rst-content tt {
     max-width: 100%;
-    background: #fff;
-    border: solid 1px #e1e4e5;
-    color: #333;
+    background: #31363F;
+    border: none 1px black;
+    color: black;
     overflow-x: auto;
 }
 
@@ -457,9 +478,9 @@ code.code-large, .rst-content tt.code-large {
 
 code {
     padding: 2px 5px;
-    background: #fff;
-    border: solid 1px #e1e4e5;
-    color: #333;
+    background: #31363F;
+    border: none 1px black;
+    color: black;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
@@ -471,14 +492,6 @@ pre code {
     word-wrap: normal;
     font-family: monospace,serif;
     font-size: 12px;
-}
-
-a code {
-    color: #2FA4E7;
-}
-
-a:hover code, a:focus code {
-    color: #157AB5;
 }
 
 footer {
@@ -511,19 +524,22 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
     text-align: left;
 }
 
-.admonition.note { /* csslint allow: adjoining-classes */
+/* More class support */
+.admonition.note, .admonition.hint, .admonition.tip, .admonition.title, .admonition.admonition { /* csslint allow: adjoining-classes */
     color: #3a87ad;
     background-color: #d9edf7;
     border-color: #bce8f1;
 }
 
-.admonition.warning { /* csslint allow: adjoining-classes */
+/* More class support */
+.admonition.warning, .admonition.caution, .admonition.attention { /* csslint allow: adjoining-classes */
     color: #c09853;
     background-color: #fcf8e3;
     border-color: #fbeed5;
 }
 
-.admonition.danger { /* csslint allow: adjoining-classes */
+/* More class support */
+.admonition.danger, .admonition.error, .admonition.important { /* csslint allow: adjoining-classes */
     color: #b94a48;
     background-color: #f2dede;
     border-color: #eed3d7;
@@ -532,4 +548,48 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 .admonition-title {
     font-weight: bold;
     text-align: left;
+}
+
+/* Custom Additions */
+input#mkdocs-search-query.form-control {
+    background-color: #21252B;
+    color: #CC342D;
+    border: 1px solid #CC342D;
+}
+
+.dropdown-menu, .dropdown-menu li {
+    background-color: #21252B;
+}
+.dropdown-menu li a:hover {
+    background-color: #2C313A;
+}
+
+a, a:visited, a:hover, a:focus {
+  color: #CC342D;
+  text-decoration: none;
+  outline: none;
+}
+
+.wm-page-content a {
+    color: #CC342D !important;
+    text-decoration: none;
+    outline: none;
+}
+
+.search-title {
+    color: #CC342D;
+}
+
+table {
+    background-color: inherit;
+}
+/* Zebra */
+th {
+    background-color: #21252B;
+}
+tbody > tr:nth-child(odd), tbody > tr:nth-child(odd) > td {
+    background-color: #282C34;
+}
+tbody > tr:nth-child(even), tbody > tr:nth-child(even) > td {
+    background-color: #2C323C;
 }
