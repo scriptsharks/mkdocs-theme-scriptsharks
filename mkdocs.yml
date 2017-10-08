@@ -7,7 +7,7 @@ repo_url: https://github.com/noraj1337/mkdocs-windmill-dark
 theme_dir: mkdocs_windmill_dark
 
 pages:
-- Windmill Theme Dark:
+- Windmill Dark Theme:
   - Usage: index.md
   - Customization: customization.md
 - Samples:

@@ -1,4 +1,4 @@
-# Windmill theme
+# Windmill Dark theme
 
 ## About
 
