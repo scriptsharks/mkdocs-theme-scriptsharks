@@ -1,13 +1,13 @@
-site_name: 'Windmill MkDocs Theme'
+site_name: 'Windmill Dark MkDocs Theme'
 site_description: 'MkDocs theme focused on navigation and usability.'
-site_author: 'Dmitry S'
+site_author: 'Alexandre ZANNI'
 
-repo_url: https://github.com/gristlabs/mkdocs-windmill
+repo_url: https://github.com/noraj1337/mkdocs-windmill-dark
 
-theme_dir: mkdocs_windmill
+theme_dir: mkdocs_windmill_dark
 
 pages:
-- Windmill Theme:
+- Windmill Theme Dark:
   - Usage: index.md
   - Customization: customization.md
 - Samples:
