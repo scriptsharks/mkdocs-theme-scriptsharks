@@ -3,7 +3,7 @@
 
 For details about standard mkdocs options, see [MkDocs Configuration](http://www.mkdocs.org/user-guide/configuration/).
 
-In addition, the Windmill theme supports a few additional options, which may be
+In addition, the Windmill Dark theme supports a few additional options, which may be
 listed under the `extra:` key of `mkdocs.yml`.
 
 ## Extra configuration options

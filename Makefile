@@ -12,10 +12,10 @@ publish_docs:
 publish_package:
 	@echo Build python distribution
 	python setup.py sdist bdist_wheel
-	@echo "Publish to PyPI at https://pypi.python.org/pypi/mkdocs-windmill"
+	@echo "Publish to PyPI at https://pypi.python.org/pypi/mkdocs-windmill-dark"
 	@echo "Version in setup.py is $(VERSION)"
 	@echo "Git tag is `git describe --tags`"
-	@echo "Run this manually: env/bin/twine upload dist/mkdocs-windmill-$(VERSION).tar.gz dist/mkdocs_windmill-$(VERSION)-py2-none-any.whl"
+	@echo "Run this manually: env/bin/twine upload dist/mkdocs-windmill-dark-$(VERSION).tar.gz dist/mkdocs_windmill-dark-$(VERSION)-py2-none-any.whl"
 
 
 .PHONY: serve publish_docs publish_package
