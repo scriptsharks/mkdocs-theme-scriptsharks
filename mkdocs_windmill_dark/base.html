@@ -113,7 +113,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 {# Code for the main template for all content pages. #}
 
 <div class="container-fluid wm-page-content">
-  {%- if config.extra.article_nav_top != False %}
+  {%- if config.theme.article_nav_top != False %}
     {% include "article-nav.html" %}
   {%- endif %}
 
@@ -130,7 +130,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   {%- endblock %}
 
   <br>
-  {%- if config.extra.article_nav_bottom != False %}
+  {%- if config.theme.article_nav_bottom != False %}
     {% include "article-nav.html" %}
     <br>
   {%- endif %}
