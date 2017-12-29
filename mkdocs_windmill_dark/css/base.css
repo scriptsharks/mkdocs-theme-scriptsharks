@@ -312,10 +312,17 @@ span.wm-toc-text {
   border: none;
 }
 
-button, .btn, .btn-sm, .btn-xs, .btn-default, .btn-link, #hist-fwd, #hist-back, #wm-toc-button, #wm-search-go {
+button, .btn, .btn-sm, .btn-xs, .btn-default, #hist-fwd, #hist-back, #wm-toc-button, #wm-search-go {
     background-color: #21252B;
     color: #CC342D;
     border: 1px solid;
+}
+
+.btn-link {
+  background-color: #282C34;
+  /* Compensate for border*/
+  margin: 1px;
+  border: none;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
