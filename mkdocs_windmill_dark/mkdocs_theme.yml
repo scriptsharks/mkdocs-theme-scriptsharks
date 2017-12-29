@@ -6,4 +6,4 @@ search_index_only: false
 
 history_buttons: true
 article_nav_top: true
-article_nav_bottom: false
+article_nav_bottom: true
