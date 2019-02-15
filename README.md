@@ -31,5 +31,5 @@ theme: windmill-dark
 ## Demo and documentation
 
 More details are on this site generated with the Windmill Dark theme:
-- [Usage](https://noraj1337.github.io/mkdocs-windmill-dark/#) for more on installation and usage.
-- [Customization](https://noraj1337.github.io/mkdocs-windmill-dark/#customization/) for extra configuration options that Windmill Dark supports.
+- [Usage](https://noraj.github.io/mkdocs-windmill-dark/#) for more on installation and usage.
+- [Customization](https://noraj.github.io/mkdocs-windmill-dark/#customization/) for extra configuration options that Windmill Dark supports.
