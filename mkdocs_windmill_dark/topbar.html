@@ -8,7 +8,7 @@
           ><i class="fa fa-search" aria-hidden="true"></i></button>
 
         <div class="input-group input-group-sm wm-top-search">
-          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
           <span class="input-group-btn" role="search">
             {# This button is hidden, but exists because an element with data-toggle attr is relied on by bootstrap. #}
             <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
@@ -25,7 +25,7 @@
     </div>
 
     {# Optional forward-back buttons #}
-    {% if config.theme.history_buttons %}
+    {% if config.extra.history_buttons %}
     <div class="wm-top-tool pull-right wm-vcenter">
       <div class="btn-group wm-vcentered" role="group" aria-label="back">
         <button id="hist-back" type="button" class="btn btn-sm btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
@@ -42,7 +42,7 @@
       <div class="wm-top-title">
         {{ config.site_name }}<br>
         {% if config.extra.version %}
-          <span class="wm-top-version">v{{ config.extra.version }}</span>
+          <span class="wm-top-version">{{ config.extra.version }}</span>
         {% endif %}
       </div>
     </a>

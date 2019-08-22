@@ -54,7 +54,7 @@
         {# Include the first two levels of TOC data as a JS object, to be rendered in top frame #}
         var pageToc = [
         {%- for item in page.toc %}
-          {title: {{ item.title|tojson }}, url: {{ item.url|tojson }}, children: [
+          {title: {{ item.title|tojson }}, url: {{ ('#_top' if loop.first else item.url)|tojson }}, children: [
             {%- for item in item.children %}
               {title: {{ item.title|tojson }}, url: {{ item.url|tojson }} },
             {%- endfor %}
@@ -113,7 +113,8 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 {# Code for the main template for all content pages. #}
 
 <div class="container-fluid wm-page-content">
-  {%- if config.theme.article_nav_top != False %}
+  <a name="_top"></a>
+  {%- if config.extra.article_nav_top != False %}
     {% include "article-nav.html" %}
   {%- endif %}
 
@@ -130,7 +131,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   {%- endblock %}
 
   <br>
-  {%- if config.theme.article_nav_bottom != False %}
+  {%- if config.extra.article_nav_bottom != False %}
     {% include "article-nav.html" %}
     <br>
   {%- endif %}
@@ -138,8 +139,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="col-md-12 wm-page-content">
 {%- block footer %}
+  {%- block repo %}
+    {%- if page and page.edit_url %}
+      <p>
+        <a href="{{ page.edit_url }}">{% include 'repo-icon.html' %}Edit on {{ config.repo_name }}</a>
+      </p>
+    {%- elif config.repo_url %}
+      <p>
+        <a href="{{ config.repo_url }}">{% include 'repo-icon.html' %}{{ config.repo_name }}</a>
+      </p>
+    {%- endif %}
+  {%- endblock %}
+
   {%- if config.copyright %}<p>{{ config.copyright }}</p>{%- endif %}
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/noraj1337/mkdocs-windmill-dark">Windmill Dark</a> theme by Alexandre ZANNI.</p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="{{ config.repo_url }}">Windmill Dark</a> theme by {{ config.site_author }} (noraj).</p>
 {%- endblock %}
 </footer>
 
