@@ -21,7 +21,7 @@ publish_docs:
 
 publish_package:
 	@echo Build python distribution
-	python setup.py sdist 
+	python setup.py sdist bdist_wheel
 	@echo "Publish to PyPI at https://pypi.python.org/pypi/mkdocs-windmill-dark"
 	@echo "Version in setup.py is $(VERSION)"
 	@echo "Git tag is `git describe --tags`"
