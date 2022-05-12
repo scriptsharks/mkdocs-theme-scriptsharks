@@ -5,7 +5,7 @@ VERSION = '0.2.0'
 setup(
     name="mkdocs-windmill-dark",
     version=VERSION,
-    url='https://github.com/noraj1337/mkdocs-windmill-dark',
+    url='https://github.com/noraj/mkdocs-windmill-dark',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
@@ -18,7 +18,7 @@ setup(
     license='MIT',
     description='MkDocs dark theme focused on navigation and usability',
     author='Alexandre ZANNI',
-    author_email='alexandre.zanni@engineer.com',
+    author_email='alexandre.zanni@europe.com',
     packages=find_packages(),
     include_package_data=True,
     entry_points={
